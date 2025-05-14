@@ -3,10 +3,11 @@
 
 #include <iostream>
 
-class Array
-{   
+
+template <typename T> class Array
+{
     private:
-        int *array;
+        T *array;
         unsigned int size;
     public:
         Array();
@@ -14,10 +15,9 @@ class Array
         Array(const Array &src);
         ~Array();
         Array &operator=(const Array &src);
-        
         unsigned int getSize() const;
-
-        int &operator[](unsigned int index);
+        T &operator[](unsigned int index);
+        const T &operator[](unsigned int index) const;
 };
 
 

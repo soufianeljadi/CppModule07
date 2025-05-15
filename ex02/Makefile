@@ -1,5 +1,5 @@
 CXX = c++
-SRC = main.cpp Array.cpp
+SRC = main.cpp 
 OBJ = $(SRC:.cpp=.o)
 RM = rm -rf
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
